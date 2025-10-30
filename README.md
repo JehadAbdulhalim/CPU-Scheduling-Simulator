@@ -54,6 +54,10 @@ Throughput window (optional)
 
 Click Run to see the Gantt chart and metrics.
 
+## Live Demo
+https://jehadabdulhalim.github.io/CPU-Scheduling-Simulator/
+
+
 <img width="1908" height="955" alt="image" src="https://github.com/user-attachments/assets/62b9a99a-215c-46c6-b349-93db05abf843" />
 <img width="1900" height="956" alt="image" src="https://github.com/user-attachments/assets/823f4e51-6ef5-4da1-857f-397ced6c332b" />
 <img width="1907" height="955" alt="image" src="https://github.com/user-attachments/assets/b6352077-2257-40d1-b797-ad40f9633dcf" />
