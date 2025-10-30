@@ -39,7 +39,7 @@ Features
 
 1. Clone or download the repository:
    ```bash
-   git clone https://github.com/YOUR-USERNAME/cpu-scheduler.git
+   git clone https://github.com/jehadabdulhalim/cpu-scheduler.git
 Open index.html in your browser.
 
 Enter:
