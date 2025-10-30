@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CPU Scheduling Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CPU Scheduling Simulator</h1>
+
+  <label>Number of Processes: <input type="number" id="numProcesses" value="3"></label>
+  <button onclick="generateTable()">Generate Table</button><br><br>
+
+  <label>Algorithm:
+    <select id="algorithm">
+      <option value="fcfs">FCFS</option>
+      <option value="sjf">SJF</option>
+      <option value="srjf">SRJF</option>
+      <option value="rr">Round Robin</option>
+      <option value="np_priority">Non-Preemptive Priority</option>
+      <option value="p_priority">Preemptive Priority</option>
+      <option value="rr_np_priority">RR with Non-Preemptive Priority</option>
+    </select>
+  </label>
+  <label>Quantum: <input type="number" id="quantum" value="2"></label>
+  <label>Throughput Window: <input type="number" id="throughputWindow" value="100"></label>
+  <button onclick="runAlgorithm()">Run</button>
+
+  <h3>Process Table</h3>
+  <table border="1" id="processTable">
+    <thead>
+      <tr>
+        <th>Process ID</th>
+        <th>Arrival Time</th>
+        <th>Burst Time</th>
+        <th>Priority</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>Gantt Chart</h3>
+  <div id="ganttChart"></div>
+
+  <h3>Metrics</h3>
+  <table class="metrics-table" id="metricsTable">
+    <tr><th>Process</th><th>Waiting Time</th><th>Turnaround Time</th><th>Response Time</th></tr>
+  </table>
+
+  <div class="metrics-summary">
+    <div>
+      <p id="avgWaitingTime"></p>
+      <p id="avgTurnaroundTime"></p>
+      <p id="avgResponseTime"></p>
+    </div>
+    <div>
+      <p id="throughput"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
